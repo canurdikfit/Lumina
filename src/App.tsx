@@ -9,7 +9,6 @@ import Statistics from "./components/Statistics"
 import Youtube from "./components/Youtube"
 import Team from "./components/team/Team"
 
-
 function App() {
 
   return (
@@ -22,7 +21,7 @@ function App() {
       <Case />
       <Statistics />
       <Team />
-      <div className="bg-[url('/images/footer.png')] bg-contain bg-bottom bg-no-repeat">
+      <div className="bg-[url('./assets/images/footer.png')] bg-contain bg-bottom bg-no-repeat">
         <Contact />
         <Footer />
       </div>

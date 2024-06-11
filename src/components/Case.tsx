@@ -43,7 +43,7 @@ export default function Case() {
 
                                             <div className="grid grid-cols-3 mt-10">
                                                 {
-                                                    content.operation.map((items: { value: number; extention: string | null | undefined; opera: string; }, idx: any) => {
+                                                    content.operation.map((items: { value: number; extention: string | null | undefined; opera: string; suffix?: string; }, idx: any) => {
                                                         return (
                                                             <div key={idx}>
                                                                 <h1 className='lg:text-3xl md:text-2xl text-xl font-bold'>
@@ -54,6 +54,8 @@ export default function Case() {
                                                                         scrollSpyDelay={1}
                                                                         duration={3}
                                                                         startOnMount={false}
+                                                                        prefix={items.suffix}
+                                                                        separator={' '}
                                                                     />
                                                                     {items.extention}
                                                                 </h1>
@@ -84,6 +86,7 @@ const caseStudy = [
         description: 'An innovative platform enhanced by Artificial intelligence to decentralise global education.',
         operation: [
             {
+                suffix: '$',
                 value: 1,
                 extention: 'M+',
                 opera: 'Daily volume'
@@ -94,6 +97,7 @@ const caseStudy = [
                 opera: 'Users'
             },
             {
+                suffix: '$',
                 value: 2.5,
                 extention: 'M',
                 opera: 'Token raise'
@@ -107,6 +111,7 @@ const caseStudy = [
         description: 'My own project. A crypto casino with a lucrative web3 economy.',
         operation: [
             {
+                suffix: '$',
                 value: 10,
                 extention: 'M+',
                 opera: 'On platform volume'
@@ -117,6 +122,7 @@ const caseStudy = [
                 opera: 'New users'
             },
             {
+                suffix: '$',
                 value: 10,
                 extention: 'K',
                 opera: 'NFT sell'
@@ -130,6 +136,7 @@ const caseStudy = [
         description: 'A decentralised Crypto Casino ',
         operation: [
             {
+                suffix: '$',
                 value: 9,
                 extention: 'M+',
                 opera: 'VC Funding',
@@ -140,6 +147,7 @@ const caseStudy = [
                 opera: 'Community members'
             },
             {
+                suffix: '$',
                 value: 700,
                 extention: 'K',
                 opera: 'NFT Raise'
@@ -153,11 +161,13 @@ const caseStudy = [
         description: 'An all-in-one crypto payments solution.',
         operation: [
             {
+                suffix: '$',
                 value: 3.3,
                 extention: 'M',
                 opera: 'VC Funding',
             },
             {
+                suffix: '$',
                 value: 21,
                 extention: 'M',
                 opera: 'Secondary NFT sale'
@@ -209,6 +219,7 @@ const caseStudy = [
                 opera: 'New users',
             },
             {
+                suffix: '$',
                 value: 1.6,
                 extention: 'M+',
                 opera: 'VC funding',

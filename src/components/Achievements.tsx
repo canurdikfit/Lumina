@@ -44,22 +44,22 @@ const Experience = [
     },
     {
         title: 'GTM Solution',
-        description: 'We design, develop & execute everything from A-Z in terms of bringing your product to market in the mos compelling way possible.'
+        description: 'We design, develop & execute everything from A-Z in terms of bringing your product to market in the most compelling way possible.'
     },
     {
         title: 'PR & Influencers',
         description: 'We have a high-value network with the biggest influencers in the industry, as-well as all of the top media outlets.'
     },
     {
-        title: 'Exchange relations',
+        title: 'Exchange Relations',
         description: 'We have connection with every exchange in the industry from Bybit & OKX to new exchanges coming to market.'
     },
     {
-        title: 'Ambassadors & Content creators',
+        title: 'Ambassadors & Content Creators',
         description: 'Building our own community of over 5,000+ we have a huge network of content creators we can engage at any point.'
     },
     {
-        title: 'Our DAO',
-        description: 'We have a DAO of 5,000+ members who are looking for new projects in the market.'
+        title: 'DAOs & Communities ',
+        description: 'We have a DAO of 5,000+ members who are actively seeking new opportunities in the market. Additional to our network of over 500+ Communities inside web3.'
     }
 ]

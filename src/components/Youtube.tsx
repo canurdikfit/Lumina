@@ -12,7 +12,7 @@ export default function Youtube() {
                 <Suspense fallback={<IframeLoadingState />}>
                     <iframe
                         className='max-w-6xl md:h-[450px] h-64 w-full'
-                        src="https://www.youtube.com/embed/Ue4G12_m5eI?si=raTGTzfOJEzMPNTc"
+                        src="https://www.youtube.com/embed/z_sQCRT0Jbk?si=_JLUZfY_0Y1OlLxj"
                         title="Lumina"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerPolicy="strict-origin-when-cross-origin"

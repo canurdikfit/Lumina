@@ -1,4 +1,3 @@
-'use client'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -35,8 +34,9 @@ export default function Carousel() {
                                 <img
                                     src={items.logoImg}
                                     alt={items.alternnative}
-                                    height={items.height}
-                                    width={items.width}
+                                    // height={items.height}
+                                    // width={items.width}
+                                    className="lg:h-10 h-5 md:h-7 w-auto object-contain"
                                 />
                             </div>
                         </div>

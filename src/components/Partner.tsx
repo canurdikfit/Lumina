@@ -40,7 +40,6 @@ export default function Partner() {
                                             end={items.value}
                                             enableScrollSpy={true}
                                             scrollSpyDelay={1}
-                                            scrollSpyOnce={true}
                                             duration={3}
                                             startOnMount={false}
                                         />
