@@ -1,7 +1,7 @@
 import Personal from './Personal'
 import Fouunder from '@/assets/images/founder.png';
 import Business from '@/assets/images/development.png';
-import Operation from '@/assets/images/marketing.png';
+import Operation from '@/assets/images/marketing.jpeg';
 import Head from '@/assets/images/collaboration.png';
 import Community from '@/assets/images/community.png';
 
