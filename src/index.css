@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  font-family: "Grotesk";
   color: rgb(var(--foreground-rgb));
   background-color: #010101;
   color: #fff;
@@ -20,6 +19,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  @apply font-normal;
 }
 
 @layer utilities {
