@@ -1,7 +1,6 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+
 import Icon from './ui/Icon'
+import Chervon from '@/assets/icons/chervon-angle-right.png';
 
 export default function Banner() {
     return (
@@ -16,13 +15,13 @@ export default function Banner() {
                         Lumina has helped over 45+ crypto companies raise over $100m million & acquire millions of users.
                     </p>
                 </div>
-                <Link href={'https://www.google.com'}
+                <a href={'https://www.youtube.com'}
                     className='lg:py-5 lg:px-10 md:py-4 py-3 px-7 md:px-8  bg-primary flex items-center gap-2 rounded-lg'>
                     <span className='text-black font-semibold text-xs md:text-sm lg:text-base'>
                         Request a free proposal
                     </span>
-                    <Icon className={'lg:h-7 lg:w-7 md:h-6 md:w-6 h-5 w-5'} icon={'/icons/chervon-angle-right.png'} />
-                </Link>
+                    <Icon className={'lg:h-7 lg:w-7 md:h-6 md:w-6 h-5 w-5'} icon={Chervon} />
+                </a>
             </div>
         </section>
     )

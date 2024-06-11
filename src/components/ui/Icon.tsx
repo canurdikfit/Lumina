@@ -1,14 +1,11 @@
-import { StaticImport } from 'next/dist/shared/lib/get-img-props'
-import Image from 'next/image'
-import React from 'react'
 
-export default function Icon(props: { className: string | undefined; icon: string | StaticImport }) {
+
+export default function Icon(props: { className: string | undefined; icon: string }) {
     return (
-        <div className={`${props.className} relative`}>
-            <Image
+        <div className={`${props.className} relative flex items-center justify-center`}>
+            <img
                 sizes='100%'
-                className='object-contain'
-                fill={true}
+                className='object-cover h-auto w-full absolute'
                 src={props.icon}
                 alt='icon'
             /></div>

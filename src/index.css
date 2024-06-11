@@ -1,15 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 html {
   scroll-behavior: smooth;
 }
 
 body {
+  font-family: "Grotesk";
   color: rgb(var(--foreground-rgb));
   background-color: #010101;
   color: #fff;
-  background-image: url("../../public/images/bodybg.png");
+  background-image: url("assets/images/bodybg.png");
   background-repeat: repeat;
   background-position: top left;
   background-size: contain;
@@ -30,7 +34,7 @@ main {
 }
 
 main .banner {
-  background-image: url("../../public/images/bannerBackgrounds.png");
+  background-image: url("assets/images/bannerBackgrounds.png");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: cover;
@@ -40,8 +44,43 @@ main .banner {
   @apply justify-end md:justify-center pb-20;
 }
 
+@font-face {
+  font-family: "GroteskLight";
+  font-style: normal;
+  font-weight: light;
+  src: url("assets/fonts/GroteskLight.otf");
+}
+
+@font-face {
+  font-family: "GroteskBook";
+  font-style: normal;
+  font-weight: normal;
+  src: url("assets/fonts/GroteskBook.otf");
+}
+
+@font-face {
+  font-family: "GroteskMedium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("assets/fonts/GroteskMedium.otf");
+}
+
+@font-face {
+  font-family: "GroteskSemi";
+  font-style: normal;
+  font-weight: medium;
+  src: url("assets/fonts/GroteskSemiBold.otf");
+}
+
+@font-face {
+  font-family: "GroteskBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("assets/fonts/GroteskBold.otf");
+}
+
 main section.header {
-  background-image: url("../../public/images/header.png");
+  background-image: url("assets/images/header.png");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: cover;
@@ -64,7 +103,7 @@ section > div {
 }
 
 .caseStudy {
-  background-image: url("../../public/images/bents.png");
+  background-image: url("assets/images/bents.png");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;

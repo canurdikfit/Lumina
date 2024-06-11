@@ -1,6 +1,5 @@
-import type { Config } from "tailwindcss";
-
-const config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
@@ -18,6 +17,13 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        light: ["GroteskLight"],
+        normal: ["GroteskBook"],
+        medium: ["GroteskMedium"],
+        semibold: ["GroteskSemi"],
+        bold: ["GroteskBold"],
+      },
       colors: {
         primary: "#50C878",
       },
@@ -31,9 +37,6 @@ const config = {
           to: { height: "0" },
         },
       },
-      backgroundImage: {
-        "hero-pattern": "url('/images/bodybg.png')",
-      },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
@@ -41,6 +44,4 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config;
-
-export default config;
+};

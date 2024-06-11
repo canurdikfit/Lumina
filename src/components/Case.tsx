@@ -1,7 +1,14 @@
-'use client'
-import React from 'react'
+
 import CountUp from 'react-countup';
 import Icon from './ui/Icon';
+import Hackcoin from '@/assets/images/hackCoin.png';
+import Basebet from '@/assets/images/basebet.png';
+import Zeebit from '@/assets/images/zeebit.png';
+import Helio from '@/assets/images/helio.png';
+import Le7el from '@/assets/images/le7el.png';
+import Minify from '@/assets/images/mintify.png';
+
+
 
 export default function Case() {
     return (
@@ -16,7 +23,7 @@ export default function Case() {
                         {
                             caseStudy.map((content, index) => {
                                 return (
-                                    <div>
+                                    <div key={index}>
                                         <div className={`max-w-2xl md:px-16 px-8 pt-10 pb-20 border-primary before:border-primary z-0 relative before:block before:absolute before:bg-cover before:bg-[url('/images/bodybg.png')] before:inset-y-0 before:-top-[1px] before:w-[50%] before:border-t
                                          ${index == 0 ? 'rounded-l-3xl before:rounded-l-3xl before:border-l before:border-b before:left-0 border-t'
                                                 : index == 1 ? 'rounded-r-3xl before:right-0 before:border-r before:rounded-r-3xl before:border-b'
@@ -36,9 +43,9 @@ export default function Case() {
 
                                             <div className="grid grid-cols-3 mt-10">
                                                 {
-                                                    content.operation.map((items: { value: number; extention: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; opera: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined }, idx: any) => {
+                                                    content.operation.map((items: { value: number; extention: string | null | undefined; opera: string; }, idx: any) => {
                                                         return (
-                                                            <div>
+                                                            <div key={idx}>
                                                                 <h1 className='lg:text-3xl md:text-2xl text-xl font-bold'>
                                                                     <CountUp
                                                                         start={0}
@@ -71,7 +78,7 @@ export default function Case() {
 
 const caseStudy = [
     {
-        icon: '/images/hackCoin.png',
+        icon: Hackcoin,
         alternative: 'Hack Coin',
         title: 'School Hack Coin',
         description: 'An innovative platform enhanced by Artificial intelligence to decentralise global education.',
@@ -94,7 +101,7 @@ const caseStudy = [
         ]
     },
     {
-        icon: '/images/basebet.png',
+        icon: Basebet,
         alternative: 'Basebet',
         title: 'Basebet',
         description: 'My own project. A crypto casino with a lucrative web3 economy.',
@@ -117,7 +124,7 @@ const caseStudy = [
         ]
     },
     {
-        icon: '/images/zeebit.png',
+        icon: Zeebit,
         alternative: 'Zeebit',
         title: 'Zeebit',
         description: 'A decentralised Crypto Casino ',
@@ -140,7 +147,7 @@ const caseStudy = [
         ]
     },
     {
-        icon: '/images/helio.png',
+        icon: Helio,
         alternative: 'Helio',
         title: 'Helio',
         description: 'An all-in-one crypto payments solution.',
@@ -163,7 +170,7 @@ const caseStudy = [
         ]
     },
     {
-        icon: '/images/le7el.png',
+        icon: Le7el,
         alternative: 'LE7EL',
         title: 'LE7EL',
         description: 'A web3 Gaming protocol.',
@@ -186,7 +193,7 @@ const caseStudy = [
         ]
     },
     {
-        icon: '/images/mintify.png',
+        icon: Minify,
         alternative: 'Mintify',
         title: 'Mintify',
         description: 'An NFT Trading platform.',

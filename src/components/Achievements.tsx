@@ -1,16 +1,18 @@
-import React from 'react'
 import Icon from './ui/Icon'
+import StarLong from '@/assets/icons/starLong.png'
+
+
 
 export default function Achievements() {
     return (
         <section className='pb-24'>
             <div className="flex flex-col items-center">
                 <div className="flex items-center justify-center gap-5">
-                    <Icon icon={'/icons/starLong.png'} className={'h-10 w-10'} />
+                    <Icon icon={StarLong} className={'h-10 w-10'} />
                     <h3 className='text-lg md:text-xl lg:text-4xl font-normal'>
                         Experience real solutions at{' '}<span className='text-primary'>Lumina.</span>
                     </h3>
-                    <Icon icon={'/icons/starLong.png'} className={'h-10 w-10'} />
+                    <Icon icon={StarLong} className={'h-10 w-10'} />
                 </div>
                 <div className="max-w-5xl mt-20 grid md:grid-cols-2 lg:gap-x-32 md:gap-x-20 gap-y-10">
                     {

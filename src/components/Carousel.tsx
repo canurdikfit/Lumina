@@ -2,7 +2,13 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Image from "next/image";
+import Solana from '@/assets/images/partners/solana.png';
+import Bybit from '@/assets/images/partners/bybit.png';
+import Gate from '@/assets/images/partners/gate.png';
+import Helio from '@/assets/images/partners/helio.png';
+import Hacken from '@/assets/images/partners/hacken.png';
+import Magic from '@/assets/images/partners/magic.png';
+import Opensea from '@/assets/images/partners/opensea.png';
 
 export default function Carousel() {
     const settings = {
@@ -26,7 +32,7 @@ export default function Carousel() {
                     Logos.map((items, id) => (
                         <div key={id} className="flex items-center mx-5 h-10">
                             <div>
-                                <Image
+                                <img
                                     src={items.logoImg}
                                     alt={items.alternnative}
                                     height={items.height}
@@ -44,38 +50,38 @@ export default function Carousel() {
 
 const Logos = [
     {
-        logoImg: '/images/partners/solana.png',
+        logoImg: Solana,
         alternnative: 'Solana',
         height: 35,
         width: 167
     },
     {
-        logoImg: '/images/partners/bybit.png',
+        logoImg: Bybit,
         alternnative: 'Bybit',
         height: 35, width: 82,
     },
     {
-        logoImg: '/images/partners/gate.png',
+        logoImg: Gate,
         alternnative: 'Gate.io',
         height: 35, width: 119,
     },
     {
-        logoImg: '/images/partners/helio.png',
+        logoImg: Helio,
         alternnative: 'Helio',
         height: 35, width: 75,
     },
     {
-        logoImg: '/images/partners/hacken.png',
+        logoImg: Hacken,
         alternnative: 'Hacken',
         height: 35, width: 149,
     },
     {
-        logoImg: '/images/partners/magic.png',
+        logoImg: Magic,
         alternnative: 'Magic Eden',
         height: 35, width: 160,
     },
     {
-        logoImg: '/images/partners/opensea.png',
+        logoImg: Opensea,
         alternnative: 'OpenSea',
         height: 35, width: 158,
     },

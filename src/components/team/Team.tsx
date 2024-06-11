@@ -1,5 +1,10 @@
-import React from 'react'
 import Personal from './Personal'
+import Fouunder from '@/assets/images/founder.png';
+import Business from '@/assets/images/development.png';
+import Operation from '@/assets/images/marketing.png';
+import Head from '@/assets/images/collaboration.png';
+import Community from '@/assets/images/community.png';
+
 
 export default function Team() {
     return (
@@ -37,38 +42,38 @@ export default function Team() {
 
 const TeamMembers = [
     {
-        image: '/images/founder.png',
+        image: Fouunder,
         title: 'Rhys Mckay',
         position: 'Founder',
-        twitter: 'https://www.google.com',
-        linkedin: 'https://www.google.com',
+        twitter: 'https://www.youtube.com',
+        linkedin: 'https://www.youtube.com',
     },
     {
-        image: '/images/development.png',
+        image: Business,
         title: 'Cullen Iwata',
         position: 'Business development',
-        twitter: 'https://www.google.com',
-        linkedin: 'https://www.google.com',
+        twitter: 'https://www.youtube.com',
+        linkedin: 'https://www.youtube.com',
     },
     {
-        image: '/images/marketing.png',
+        image: Operation,
         title: 'John Rodriguez',
         position: 'Operation / Marketing',
-        twitter: 'https://www.google.com',
-        linkedin: 'https://www.google.com',
+        twitter: 'https://www.youtube.com',
+        linkedin: 'https://www.youtube.com',
     },
     {
-        image: '/images/collaboration.png',
+        image: Head,
         title: 'Moh1shh',
         position: 'Head of collaborations',
-        twitter: 'https://www.google.com',
-        linkedin: 'https://www.google.com',
+        twitter: 'https://www.youtube.com',
+        linkedin: 'https://www.youtube.com',
     },
     {
-        image: '/images/community.png',
+        image: Community,
         title: 'PUNK',
         position: ' Community specialist',
-        twitter: 'https://www.google.com',
-        linkedin: 'https://www.google.com',
+        twitter: 'https://www.youtube.com',
+        linkedin: 'https://www.youtube.com',
     },
 ]

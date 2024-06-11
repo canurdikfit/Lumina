@@ -1,7 +1,7 @@
-import React from 'react'
+
 import Icon from './ui/Icon'
 import Calendly from './Calendly'
-
+import Logo from '@/assets/icons/logo.png'
 
 export default function Contact() {
     return (
@@ -19,7 +19,7 @@ export default function Contact() {
                                 <div
                                     key={idx}
                                     className="flex items-start gap-4">
-                                    <Icon icon={'/icons/logo.png'} className='h-6 w-6 flex-shrink-0' />
+                                    <Icon icon={Logo} className='h-6 w-6 flex-shrink-0' />
                                     <p className='font-light text-sm max-w-md'>{_}</p>
                                 </div>
                             ))
