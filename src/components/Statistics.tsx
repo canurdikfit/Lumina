@@ -59,7 +59,7 @@ export default function Statistics() {
                 <Slider {...settings}
                     speed={8000}>
                     {
-                        ImageTop.map((items, id) => (
+                        ImageBottom.map((items, id) => (
                             <div key={id} className="flex h-full items-center">
                                 <div className="h-[180px] relative mx-3 w-auto rounded-lg overflow-hidden">
                                     <img
