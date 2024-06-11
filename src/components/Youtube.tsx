@@ -18,7 +18,7 @@ export default function Youtube() {
                         referrerPolicy="strict-origin-when-cross-origin"
                         allowFullScreen></iframe>
                 </Suspense>
-                <Link href={''}
+                <Link href={'https://www.google.com'}
                     className='lg:py-5 lg:px-10 md:py-4 py-3 px-7 md:px-8  bg-primary flex items-center gap-2 rounded-lg'>
                     <span className='text-black font-semibold'>
                         Go to youtube

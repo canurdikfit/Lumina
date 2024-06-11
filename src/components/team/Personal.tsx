@@ -14,7 +14,7 @@ export default function Personal(props: { image: string | StaticImport; position
                     className='object-cover'
                     fill={true}
                     src={props.image}
-                    alt=''
+                    alt='https://www.google.com'
                 /></div>
             <h3 className='font-medium md:text-lg text-base'>{props.position}</h3>
             <p className='md:text-sm font-light text-xs'>{props.title}</p>

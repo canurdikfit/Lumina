@@ -16,7 +16,7 @@ export default function Banner() {
                         Lumina has helped over 45+ crypto companies raise over $100m million & acquire millions of users.
                     </p>
                 </div>
-                <Link href={''}
+                <Link href={'https://www.google.com'}
                     className='lg:py-5 lg:px-10 md:py-4 py-3 px-7 md:px-8  bg-primary flex items-center gap-2 rounded-lg'>
                     <span className='text-black font-semibold text-xs md:text-sm lg:text-base'>
                         Request a free proposal
