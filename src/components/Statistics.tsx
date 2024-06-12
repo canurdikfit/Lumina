@@ -32,7 +32,7 @@ export default function Statistics() {
         autoplaySpeed: 1000,
         variableWidth: true,
         navigator: false,
-        className: "slider variable-width md:h-[180px] h-28 max-w-screen mt-0 overflow-hidden bg-red-500",
+        className: "slider variable-width md:h-[180px] h-32 max-w-screen mt-0 overflow-hidden bg-red-500",
     };
 
     return (
@@ -43,8 +43,8 @@ export default function Statistics() {
                     speed={7000}>
                     {
                         ImageTop.map((items, id) => (
-                            <div key={id} className="flex md:h-[180px] h-28 r items-center">
-                                <div className="md:h-[180px] h-28 relative mx-3 w-auto rounded-lg overflow-hidden">
+                            <div key={id} className="flex md:h-[180px] h-32 r items-center">
+                                <div className="md:h-[180px] h-32 relative mx-3 w-auto rounded-lg overflow-hidden">
                                     <img
                                         src={items}
                                         alt={'Statistics'}
@@ -60,8 +60,8 @@ export default function Statistics() {
                     speed={8000}>
                     {
                         ImageBottom.map((items, id) => (
-                            <div key={id} className="flex md:h-[180px] h-28 r items-center">
-                                <div className="md:h-[180px] h-28 relative mx-3 w-auto rounded-lg overflow-hidden">
+                            <div key={id} className="flex md:h-[180px] h-32 r items-center">
+                                <div className="md:h-[180px] h-32 relative mx-3 w-auto rounded-lg overflow-hidden">
                                     <img
                                         src={items}
                                         alt={'Statistics'}
