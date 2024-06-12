@@ -25,6 +25,7 @@ export default function Team() {
                             return (
                                 <Personal
                                     key={idx}
+                                    id={idx}
                                     image={items.image}
                                     position={items.position}
                                     title={items.title}
