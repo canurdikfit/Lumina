@@ -2,7 +2,6 @@
 import Icon from './ui/Icon'
 import Calendly from './Calendly'
 import Logo from '@/assets/icons/logo.png'
-import { stringify } from 'querystring'
 
 export default function Contact() {
     return (
