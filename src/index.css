@@ -117,3 +117,11 @@ section > div {
 .slick-next {
   display: none !important;
 }
+
+.slick-list,
+.slick-track
+{
+  @apply md:h-[180px] h-32;
+}
+
+
