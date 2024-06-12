@@ -5,7 +5,7 @@ import Twitter from '@/assets/icons/twitter.png'
 
 export default function Personal(props: { image: any; position: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined; title: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined; linkedin: any; twitter: any }) {
     return (
-        <div className='w-auto max-w-[352] grid justify-center p-4 bg-[#0E0E0E] text-center gap-3'>
+        <div data-aos="fade-up" className='w-auto max-w-[352] grid justify-center p-4 bg-[#0E0E0E] text-center gap-3'>
             <div className='w-full h-80 min-w-[320px] max-w-[400px] relative'>
                 <img
                     sizes='100%'

@@ -16,7 +16,7 @@ export default function Partner() {
         <section className='flex justify-center'>
 
             <div className="pt-20 text-center flex flex-col items-center">
-                <h4>
+                <h4 data-aos="fade-up" data-aos-duration="600">
                     Partners in our ecosystem
                 </h4>
                 <Carousel />

@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import Achievements from "./components/Achievements"
 import Banner from "./components/Banner"
 import Case from "./components/Case"
@@ -8,8 +9,13 @@ import Partner from "./components/Partner"
 import Statistics from "./components/Statistics"
 import Youtube from "./components/Youtube"
 import Team from "./components/team/Team"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <main className="min-h-screen">

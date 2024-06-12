@@ -25,7 +25,7 @@ export default function Carousel() {
         className: "slider variable-width",
     };
     return (
-        <div className="slider-container lg:max-w-5xl max-w-xs md:max-w-2xl mx-auto mt-20 overflow-hidden">
+        <div data-aos="fade-up" data-aos-duration="600" className="slider-container lg:max-w-5xl max-w-xs md:max-w-2xl mx-auto mt-20 overflow-hidden">
             <Slider {...settings}>
                 {
                     Logos.map((items, id) => (

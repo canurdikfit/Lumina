@@ -15,8 +15,8 @@ export default function Case() {
         <section className='caseStudy pt-24' id='caseStudy'>
             <div>
                 <div className="text-center mb-20">
-                    <h2 className='lg:text-6xl md:text-5xl text-4xl font-normal '>CASE STUDY</h2>
-                    <p className='lg:text-xl md:text-base text-sm max-w-2xl mt-5 opacity-55'>No matter what, our principles remain the same. We don't work on you — we work with you.</p>
+                    <h2 data-aos="fade-up" data-aos-delay="100" className='lg:text-6xl md:text-5xl text-4xl font-normal '>CASE STUDY</h2>
+                    <p data-aos="fade-up" data-aos-delay="200" className='lg:text-xl md:text-base text-sm max-w-2xl mt-5 opacity-55'>No matter what, our principles remain the same. We don't work on you — we work with you.</p>
                 </div>
                 <div className="pb-12 ">
                     <div className="grid justify-center">
@@ -34,10 +34,10 @@ export default function Case() {
                                                                     : null
                                             }`}>
                                             <div className="flex gap-6 items-center">
-                                                <Icon className={'md:h-44 md:w-44 h-20 w-20'} icon={content.icon} />
-                                                <div className="grid gap-1 md:gap-3">
+                                                <Icon data-aos="fade-in" className={'md:h-44 md:w-44 h-20 w-20'} icon={content.icon} />
+                                                <div data-aos="fade-right" data-aos-delay="100" className="grid gap-1 md:gap-3">
                                                     <h4>{content.title}</h4>
-                                                    <p className='font-light md:text-sm text-[11px]'>{content.description}</p>
+                                                    <p data-aos="fade-right" data-aos-delay="100" className='font-light md:text-sm text-[11px]'>{content.description}</p>
                                                 </div>
                                             </div>
 
@@ -46,7 +46,7 @@ export default function Case() {
                                                     content.operation.map((items: { value: number; extention: string | null | undefined; opera: string; suffix?: string; }, idx: any) => {
                                                         return (
                                                             <div key={idx}>
-                                                                <h1 className='lg:text-3xl md:text-2xl text-xl font-bold'>
+                                                                <h1 data-aos="fade-up" data-aos-delay="100" className='lg:text-3xl md:text-2xl text-xl font-bold'>
                                                                     <CountUp
                                                                         start={0}
                                                                         end={items.value}
@@ -59,7 +59,7 @@ export default function Case() {
                                                                     />
                                                                     {items.extention}
                                                                 </h1>
-                                                                <p className='font-light text-xs opacity-55'>{items.opera}</p>
+                                                                <p data-aos="fade-up" data-aos-delay="100" className='font-light text-xs opacity-55'>{items.opera}</p>
                                                             </div>
                                                         )
                                                     })

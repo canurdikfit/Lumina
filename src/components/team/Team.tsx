@@ -11,11 +11,11 @@ export default function Team() {
         <section className='lg:pt-36 pt-20'>
             <div>
                 <div className="flex flex-wrap md:flex-nowrap items-center justify-between mb-10 lg:gap-12 gap-5  max-w-5xl mx-auto">
-                    <h1 className='lg:text-6xl md:text-4xl text-3xl font-normal'>
+                    <h1 data-aos="fade-up" className='lg:text-6xl md:text-4xl text-3xl font-normal'>
                         MEET THE <br />
                         TEAM
                     </h1>
-                    <p className='font-light lg:text-xl text-base opacity-55 max-w-sm'>
+                    <p data-aos="fade-up" className='font-light lg:text-xl text-base opacity-55 max-w-sm'>
                         Meet the team at lumina. we are specialiy
                         qualified with the right experience in bringing out the teams success </p>
                 </div>

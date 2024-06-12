@@ -9,7 +9,8 @@ export default function Achievements() {
             <div className="flex flex-col items-center">
                 <div className="flex items-center justify-center gap-5">
                     <Icon icon={StarLong} className={'h-10 w-10'} />
-                    <h3 className='text-lg md:text-xl lg:text-4xl font-normal'>
+                    <h3 data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back" daata-aos-delay='0' className='text-lg md:text-xl lg:text-4xl font-normal'>
                         Experience real solutions at{' '}<span className='text-primary'>Lumina.</span>
                     </h3>
                     <Icon icon={StarLong} className={'h-10 w-10'} />
@@ -20,8 +21,10 @@ export default function Achievements() {
                             return (
                                 <div key={idx}
                                     className="max-w-xl grid gap-2">
-                                    <h5 className='font-semibold md:text-xl text-base'>{item.title}</h5>
-                                    <p className='opacity-55 font-light text-xs md:text-base'>{item.description}</p>
+                                    <h5 data-aos="fade-zoom-in"
+                                        data-aos-easing="ease-in-back" daata-aos-delay='0' className='font-semibold md:text-xl text-base'>{item.title}</h5>
+                                    <p data-aos="fade-zoom-in"
+                                        data-aos-easing="ease-in-back" daata-aos-delay='0' className='opacity-55 font-light text-xs md:text-base'>{item.description}</p>
 
                                     <div
                                         className='h-[1px] w-full bg-gradient-to-r from-primary via-primary to-primary/0 from-25% via-55% to-85% mt-10' />
