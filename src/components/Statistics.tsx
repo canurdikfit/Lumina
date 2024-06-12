@@ -32,12 +32,12 @@ export default function Statistics() {
         autoplaySpeed: 1000,
         variableWidth: true,
         navigator: false,
-        className: "slider variable-width md:h-[180px] h-28 max-w-screen mt-0 overflow-hidden",
+        className: "slider variable-width md:h-[180px] h-28 max-w-screen mt-0 overflow-hidden bg-red-500",
     };
 
     return (
         <section className="p-0 relative bg-no-repeat bg-cover bg-left-top my-20 ">
-            <aside className="overflow-hidden absolute inset-0 flex right-0 md:top-20 gap-5 flex-col justify-end bg-red-500">
+            <aside className="overflow-hidden absolute inset-0 flex right-0 md:top-20 gap-5 flex-col justify-end ">
                 <Slider {...settings}
                     rtl={true}
                     speed={7000}>
