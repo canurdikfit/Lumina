@@ -1,20 +1,20 @@
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import fiveUP from './../assets/images/staticUp/five.png';
-import fourUp from './../assets/images/staticUp/four.png';
-import OneUp from './../assets/images/staticUp/one.png';
-import SixUp from './../assets/images/staticUp/six.png';
-import threeUp from './../assets/images/staticUp/three.png';
-import TwoUp from './../assets/images/staticUp/two.png';
-import twoDown from './../assets/images/staticDown/two.png';
-import threeDown from './../assets/images/staticDown/three.png';
-import sixDown from './../assets/images/staticDown/six.png';
-import sevenDown from './../assets/images/staticDown/seven.png';
-import oneDown from './../assets/images/staticDown/one.png';
-import fourDown from './../assets/images/staticDown/four.png';
-import fiveDown from './../assets/images/staticDown/five.png';
-import eightDown from './../assets/images/staticDown/eight.png';
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+// import fiveUP from './../assets/images/staticUp/five.png';
+// import fourUp from './../assets/images/staticUp/four.png';
+// import OneUp from './../assets/images/staticUp/one.png';
+// import SixUp from './../assets/images/staticUp/six.png';
+// import threeUp from './../assets/images/staticUp/three.png';
+// import TwoUp from './../assets/images/staticUp/two.png';
+// import twoDown from './../assets/images/staticDown/two.png';
+// import threeDown from './../assets/images/staticDown/three.png';
+// import sixDown from './../assets/images/staticDown/six.png';
+// import sevenDown from './../assets/images/staticDown/seven.png';
+// import oneDown from './../assets/images/staticDown/one.png';
+// import fourDown from './../assets/images/staticDown/four.png';
+// import fiveDown from './../assets/images/staticDown/five.png';
+// import eightDown from './../assets/images/staticDown/eight.png';
 import Carousel from "./Carousel";
 // bg-[url('/statistics.png')]
 
@@ -22,19 +22,19 @@ import Carousel from "./Carousel";
 
 
 export default function Statistics() {
-    const settings = {
-        dots: false,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        cssEase: "linear",
-        centerMode: true,
-        autoplaySpeed: 1000,
-        variableWidth: true,
-        navigator: false,
-        className: "slider variable-width md:h-[180px] h-32 max-w-screen mt-0 overflow-hidden",
-    };
+    // const settings = {
+    //     dots: false,
+    //     infinite: true,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     autoplay: true,
+    //     cssEase: "linear",
+    //     centerMode: true,
+    //     autoplaySpeed: 1000,
+    //     variableWidth: true,
+    //     navigator: false,
+    //     className: "slider variable-width md:h-[180px] h-32 max-w-screen mt-0 overflow-hidden",
+    // };
 
     return (
         <section className="p-0 relative bg-no-repeat bg-cover bg-left-top my-6 ">
@@ -101,20 +101,20 @@ export default function Statistics() {
 }
 
 
-const ImageTop = [
-    OneUp,
-    TwoUp,
-    threeUp,
-    fourUp,
-    fiveUP,
-    SixUp,]
-const ImageBottom = [
-    twoDown,
-    threeDown,
-    sixDown,
-    sevenDown,
-    oneDown,
-    fourDown,
-    fiveDown,
-    eightDown,
-]
+// const ImageTop = [
+//     OneUp,
+//     TwoUp,
+//     threeUp,
+//     fourUp,
+//     fiveUP,
+//     SixUp,]
+// const ImageBottom = [
+//     twoDown,
+//     threeDown,
+//     sixDown,
+//     sevenDown,
+//     oneDown,
+//     fourDown,
+//     fiveDown,
+//     eightDown,
+// ]
