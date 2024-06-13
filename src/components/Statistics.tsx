@@ -40,7 +40,7 @@ export default function Statistics() {
             <aside className="overflow-hidden   flex right-0  gap-5 flex-col justify-end ">
                 <Slider {...settings}
                     rtl={true}
-                    speed={7000}>
+                    speed={2000}>
                     {
                         ImageTop.map((items, id) => (
                             <div key={id} className="flex md:h-[180px] h-32 r items-center">
@@ -57,7 +57,7 @@ export default function Statistics() {
                 </Slider>
 
                 <Slider {...settings}
-                    speed={8000}>
+                    speed={2000}>
                     {
                         ImageBottom.map((items, id) => (
                             <div key={id} className="flex md:h-[180px] h-32 r items-center">
