@@ -1,4 +1,3 @@
-import Carousel from "./Carousel";
 import StatisticCarousel from "./StatisticCarousel";
 
 
