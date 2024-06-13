@@ -40,7 +40,7 @@ export default function StatisticCarousel() {
                 {
                     ImageTop.map((items, id) => (
                         <div key={id} className="flex md:h-[180px] h-32 r items-center">
-                            <div className="md:h-[180px] h-32 relative mx-3 w-auto rounded-lg overflow-hidden">
+                            <div className="md:h-[180px] h-32 relative mx-3 md:w-auto w-[250px] rounded-lg overflow-hidden">
                                 <img
                                     src={items}
                                     alt={'Statistics'}
@@ -57,7 +57,7 @@ export default function StatisticCarousel() {
                 {
                     ImageBottom.map((items, id) => (
                         <div key={id} className="flex md:h-[180px] h-32 r items-center">
-                            <div className="md:h-[180px] h-32 relative mx-3 w-auto rounded-lg overflow-hidden">
+                            <div className="md:h-[180px] h-32 relative mx-3 md:w-auto w-[250px] rounded-lg overflow-hidden">
                                 <img
                                     src={items}
                                     alt={'Statistics'}
