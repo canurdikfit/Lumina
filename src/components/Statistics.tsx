@@ -37,7 +37,7 @@ export default function Statistics() {
 
     return (
         <section className="p-0 relative bg-no-repeat bg-cover bg-left-top my-20 ">
-            <aside className="overflow-hidden   flex right-0  gap-5 flex-col justify-end ">
+            <div className="overflow-hidden p-0 flex right-0  gap-5 flex-col justify-end ">
                 <Slider {...settings}
                     rtl={true}
                     speed={2000}>
@@ -73,7 +73,7 @@ export default function Statistics() {
                     }
                 </Slider>
 
-            </aside>
+            </div>
 
 
 
