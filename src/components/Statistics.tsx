@@ -15,6 +15,7 @@ import oneDown from './../assets/images/staticDown/one.png';
 import fourDown from './../assets/images/staticDown/four.png';
 import fiveDown from './../assets/images/staticDown/five.png';
 import eightDown from './../assets/images/staticDown/eight.png';
+import Carousel from "./Carousel";
 // bg-[url('/statistics.png')]
 
 
@@ -32,34 +33,17 @@ export default function Statistics() {
         autoplaySpeed: 1000,
         variableWidth: true,
         navigator: false,
-        className: "slider variable-width md:h-[180px] h-32 max-w-screen mt-0 overflow-hidden bg-red-500",
+        className: "slider variable-width md:h-[180px] h-32 max-w-screen mt-0 overflow-hidden",
     };
 
     return (
-        <section className="p-0 relative bg-no-repeat bg-cover bg-left-top my-20 ">
-            <div className="overflow-hidden p-0 flex right-0  gap-5 flex-col justify-end ">
-                <Slider {...settings}
+        <section className="p-0 relative bg-no-repeat bg-cover bg-left-top my-6 ">
+            <div className="overflow-hidden absolute inset-0 flex right-0 p-0 md:top-20 gap-5 flex-col justify-end">
+                {/* <Slider {...settings}
                     rtl={true}
-                    speed={2000}>
+                    speed={7000}>
                     {
                         ImageTop.map((items, id) => (
-                            <div key={id} className="flex md:h-[180px] h-32 r items-center">
-                                <div className="md:h-[180px] h-32 min-w-24 relative mx-3 w-auto rounded-lg overflow-hidden">
-                                    <img
-                                        src={items}
-                                        alt={'Statistics'}
-                                        className='h-full w-full object-cover object-left-top'
-                                    />
-                                </div>
-                            </div>
-                        ))
-                    }
-                </Slider>
-
-                <Slider {...settings}
-                    speed={2000}>
-                    {
-                        ImageBottom.map((items, id) => (
                             <div key={id} className="flex md:h-[180px] h-32 r items-center">
                                 <div className="md:h-[180px] h-32 relative mx-3 w-auto rounded-lg overflow-hidden">
                                     <img
@@ -73,6 +57,23 @@ export default function Statistics() {
                     }
                 </Slider>
 
+                <Slider {...settings}
+                    speed={8000}>
+                    {
+                        ImageBottom.map((items, id) => (
+                            <div key={id} className="flex md:h-[180px] h-32 r items-center">
+                                <div className="md:h-[180px] h-32 relative mx-3 w-auto rounded-lg overflow-hidden">
+                                    <img
+                                        src={items}
+                                        alt={'Statistics'}
+                                        className='h-full w-full object-contain object-left-top'
+                                    />
+                                </div>
+                            </div>
+                        ))
+                    }
+                </Slider> */}
+                <Carousel />
             </div>
 
 
@@ -83,14 +84,12 @@ export default function Statistics() {
             <div className="bg-gradient-to-r from-black via-black to-black/0 from-0% via-30% to-90% py-28
              before:absolute relative z-10 before:w-full before:h-[80%] before:rounded-full before:bg-primary/5 before:top-0 before:-left-1/4 before:blur-3xl before:z-0">
                 <div className='grid gap-6 relative z-30'>
-                    <h2 data-aos="fade-right"
-                        data-aos-duration="500" className='lg:text-4xl text-base md:text-2xl font-normal leading-normal'>
+                    <h2 className='lg:text-4xl text-base md:text-2xl font-normal leading-normal'>
                         Experience <br />
                         skyrocketing statistics <br />
                         at Lumina
                     </h2>
-                    <p data-aos="fade-right"
-                        data-aos-duration="500" data-aos-delay='100' className='lg:text-lg md:text-base text-sm font-semibold opacity-55'>
+                    <p className='lg:text-lg md:text-base text-sm font-semibold opacity-55'>
                         We design, develop & execute everything from A-Z in <br className='hidden md:block' />
                         terms of bringing your product to market in the <br className='hidden md:block' />
                         most compelling way possible.
