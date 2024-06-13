@@ -48,7 +48,7 @@ export default function Statistics() {
                                     <img
                                         src={items}
                                         alt={'Statistics'}
-                                        className='h-full w-full object-contain object-left-top'
+                                        className='h-full w-full object-cover object-left-top'
                                     />
                                 </div>
                             </div>
