@@ -34,7 +34,7 @@ export default function BuyPop() {
                 href={items.url}
                 className="relative"
               >
-                <div className="h-12 md:h-16 lg:h-20 z-20 rounded-full border-4 border-black flex flex-row items-center justify-center px-7 md:px-14 bg-[#9959BA] relative">
+                <div className="h-12 md:h-16 lg:h-20 z-20 rounded-full border-4 border-black flex flex-row items-center justify-center px-5 md:px-14 bg-[#9959BA] relative">
                   <p className="text-xs md:text-xl lg:text-[25px] text-white font-bold">
                     {items.title}
                   </p>
