@@ -10,9 +10,9 @@ export default function Banner() {
     if (copied) {
       setTimeout(() => {
         setCopied(false);
-      }, "3000");
+      }, "2000");
     }
-  }, []);
+  });
 
   return (
     <section className="min-h-[550px] md:min-h-[500px] lg:min-h-[600px] bg-[#73EFDF] flex items-end justify-center lg:pb-28 pb-20 px-4 md:px-12 lg:px-20">
