@@ -10,7 +10,7 @@ export default function BuyPop() {
       <div className="relative h-fit z-20 container">
         <div className="absolute h-full -z-10 w-full bg-black rounded-3xl md:rounded-[45px] lg:rounded-[64px] top-2 left-2 md:top-3 md:left-3" />
         <div className="w-full py-20 px-6 md:px-16 bg-white rounded-3xl md:rounded-[45px] lg:rounded-[64px] flex flex-col items-center justify-center gap-5 md:gap-8 lg:gap-y-12">
-          <div data-aos="fade-up">
+          <div>
             <img
               src={Buy}
               alt="Buy $ICEPOP"
@@ -18,11 +18,7 @@ export default function BuyPop() {
             />
           </div>
 
-          <p
-            data-aos="fade-up"
-            data-aos-delay="100"
-            className="text-black content_text text-base md:text-xl lg:text-2xl font-medium text-center"
-          >
+          <p className="text-black content_text text-base md:text-xl lg:text-2xl font-medium text-center">
             $ICEPOP is a muuvement to unite everyone in crypto. Backed by number{" "}
             <br className="hidden lg:block" />
             go up technology, the bull born from the meme we all know and love{" "}
@@ -33,7 +29,7 @@ export default function BuyPop() {
             {BuyLinks.map((items, idx) => (
               <a
                 data-aos="fade-up"
-                data-aos-delay={70 * (idx + 3)}
+                data-aos-delay={50 * (idx + 1)}
                 key={idx}
                 href={items.url}
                 className="relative"

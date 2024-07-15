@@ -14,6 +14,7 @@ function App() {
   useEffect(() => {
     Aos.init({
       duration: 1000,
+      anchorPlacement: "bottom-bottom",
     });
     Aos.refresh();
   }, []);

@@ -16,7 +16,7 @@ export default function Tokenomics() {
           className="h-20 md:h-28 lg:h-36 w-auto"
         />
         <div className="px-6 md:px-14 lg:px-20 flex flex-col gap-6 md:gap-12 lg:gap-16 mt-8">
-          <div data-aos="fade-up" data-aos-delay="100">
+          <div data-aos="fade-up" data-aos-delay=" 50">
             <h4 className="text-black text-lg md:text-xl lg:text-3xl content_text font-semibold">
               LP - 65%
             </h4>
@@ -30,7 +30,7 @@ export default function Tokenomics() {
               animateOnRender={true}
             />
           </div>
-          <div data-aos="fade-up" data-aos-delay="150">
+          <div data-aos="fade-up" data-aos-delay="70">
             <h4 className="text-black text-lg md:text-xl lg:text-3xl content_text font-semibold">
               TREASURY - 30%
             </h4>
@@ -44,7 +44,7 @@ export default function Tokenomics() {
               animateOnRender={true}
             />
           </div>
-          <div data-aos="fade-up" data-aos-delay="200">
+          <div data-aos="fade-up" data-aos-delay="100">
             <h4 className="text-black text-lg md:text-xl lg:text-3xl content_text font-semibold">
               CEX WALLET - 10%
             </h4>
