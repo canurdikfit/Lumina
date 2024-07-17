@@ -83,27 +83,22 @@ export default function Faq() {
 
 const Questions = [
   {
-    question: "What do we have to offer?",
+    question: "What chain is ICEPOP on?",
     answer:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, consequatur? Quia quisquam, nisi porro beatae sunt tempore. Quis, atque quos?",
   },
   {
-    question: "How can i buy $ICEPOP?",
+    question: "Who is the Team?",
     answer:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, consequatur? Quia quisquam, nisi porro beatae sunt tempore. Quis, atque quos?",
   },
   {
-    question: "Who are the founders?",
+    question: "How can I buy $ICEPOP",
     answer:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, consequatur? Quia quisquam, nisi porro beatae sunt tempore. Quis, atque quos?",
   },
   {
-    question: "When is launch date?",
-    answer:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, consequatur? Quia quisquam, nisi porro beatae sunt tempore. Quis, atque quos?",
-  },
-  {
-    question: "What do i stan to gain?",
+    question: "Wen launch",
     answer:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, consequatur? Quia quisquam, nisi porro beatae sunt tempore. Quis, atque quos?",
   },
