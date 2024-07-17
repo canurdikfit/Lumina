@@ -7,7 +7,7 @@ export default function IcePop() {
       id="about"
       className="px-6 md:px-14 lg:px-24 py-20 flex items-center justify-center bg-white"
     >
-      <div className="w-full overflow-hidden container bg-white rounded-3xl md:rounded-[45px] lg:rounded-[64px] flex flex-col items-start justify-start border-4 border-black">
+      <div className="w-full overflow-hidden container bg-white rounded-3xl flex flex-col items-start justify-start border-4 border-black">
         <video controls loop>
           <source src={Video} type="video/mp4" />
         </video>
