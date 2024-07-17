@@ -32,20 +32,20 @@ export default function Tokenomics() {
               </h3>
               <div className="flex flex-col gap-7">
                 <div className="flex items-start gap-2.5">
-                  <span className="h-3 w-3 mt-1.5 rounded-full bg-[#F94144] inline-block" />
+                  <span className="h-3 w-3 mt-1.5 rounded-full bg-[#F94144] inline-block flex-shrink-0" />
                   <span className="text-lg content_text font-semibold">
                     {" "}
                     60% of Supply to Presale Participants
                   </span>
                 </div>
                 <div className="flex items-start gap-2.5">
-                  <span className="h-3 w-3 mt-1.5 rounded-full bg-[#90BE6D] inline-block" />
+                  <span className="h-3 w-3 mt-1.5 rounded-full bg-[#90BE6D] inline-block flex-shrink-0" />
                   <span className="text-lg content_text font-semibold">
                     15% of Supply to LP
                   </span>
                 </div>
                 <div className="flex items-start gap-2.5">
-                  <span className="h-3 w-3 mt-1.5 rounded-full bg-[#F3722C] inline-block" />
+                  <span className="h-3 w-3 mt-1.5 rounded-full bg-[#F3722C] inline-block flex-shrink-0" />
                   <span className="text-lg content_text font-semibold">
                     {" "}
                     10% of Tokens for Exchanges + Market Making <br />
@@ -53,7 +53,7 @@ export default function Tokenomics() {
                   </span>
                 </div>
                 <div className="flex items-start gap-2.5">
-                  <span className="h-3 w-3 mt-1.5 rounded-full bg-[#F9C74F] inline-block" />
+                  <span className="h-3 w-3 mt-1.5 rounded-full bg-[#F9C74F] inline-block flex-shrink-0" />
                   <span className="text-lg content_text font-semibold">
                     10% Marketing <br /> 5% Strategic Partnerships (Top
                     communities) <br />
@@ -61,7 +61,7 @@ export default function Tokenomics() {
                   </span>
                 </div>
                 <div className="flex items-start gap-2.5">
-                  <span className="h-3 w-3 rounded-full bg-[#F8961E] inline-block mt-1.5" />
+                  <span className="h-3 w-3 rounded-full bg-[#F8961E] inline-block flex-shrink-0 mt-1.5" />
                   <span className="text-lg content_text font-semibold">
                     5% Team / Advisors <br /> 3% Team (Vested for 2 Year) <br />
                     2% Advisors
@@ -88,13 +88,13 @@ export default function Tokenomics() {
               </h3>
               <div className="flex flex-col gap-7">
                 <div className="flex items-start gap-2.5">
-                  <span className="h-3 w-3 mt-1.5 rounded-full bg-[#F94144] inline-block" />
+                  <span className="h-3 w-3 mt-1.5 rounded-full bg-[#F94144] inline-block flex-shrink-0" />
                   <span className="text-lg content_text font-semibold">
                     50% of Raise to LP
                   </span>
                 </div>
                 <div className="flex items-start gap-2.5">
-                  <span className="h-3 w-3 mt-1.5 rounded-full bg-[#90BE6D] inline-block" />
+                  <span className="h-3 w-3 mt-1.5 rounded-full bg-[#90BE6D] inline-block flex-shrink-0" />
                   <span className="text-lg content_text font-semibold">
                     50% of Raise for Expenses / Marketing / Development
                   </span>
