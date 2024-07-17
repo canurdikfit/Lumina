@@ -6,7 +6,7 @@ export default function IcePop() {
   return (
     <section
       id="about"
-      className="px-6 md:px-14 lg:px-24 pt-20 flex items-center justify-center bg-white"
+      className="px-6 md:px-14 lg:px-24 py-20 lg:pb-0 flex items-center justify-center bg-white"
     >
       <div className="w-fit mx-auto overflow-hidden container rounded-2xl">
         <video
