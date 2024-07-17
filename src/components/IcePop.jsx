@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import Video from "./../assets/video.mov";
+import Video from "./../assets/video.mp4";
 import TheBox from "./../assets/images/thebox.png";
 
 export default function IcePop() {
