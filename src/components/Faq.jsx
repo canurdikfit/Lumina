@@ -70,7 +70,7 @@ export default function Faq() {
             <FaDiscord />
           </a>
           <a
-            href="/"
+            href="https://x.com/icepopcoin?s=11"
             className="text-3xl text-white hover:text-[#73EFDF] transition-colors ease-in-out duration-300"
           >
             <FaXTwitter />
@@ -84,22 +84,18 @@ export default function Faq() {
 const Questions = [
   {
     question: "What chain is ICEPOP on?",
-    answer:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, consequatur? Quia quisquam, nisi porro beatae sunt tempore. Quis, atque quos?",
+    answer: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
   },
   {
     question: "Who is the Team?",
-    answer:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, consequatur? Quia quisquam, nisi porro beatae sunt tempore. Quis, atque quos?",
+    answer: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
   },
   {
     question: "How can I buy $ICEPOP",
-    answer:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, consequatur? Quia quisquam, nisi porro beatae sunt tempore. Quis, atque quos?",
+    answer: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
   },
   {
     question: "Wen launch",
-    answer:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, consequatur? Quia quisquam, nisi porro beatae sunt tempore. Quis, atque quos?",
+    answer: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
   },
 ];

@@ -56,7 +56,7 @@ export default function Banner() {
               <div className="absolute h-full w-full top-1 left-0.5 border-4 border-black rounded-full bg-black" />
             </span>
           </CopyToClipboard>
-          <a href="">
+          <a href="https://x.com/icepopcoin?s=11">
             <div data-aos="fade-up" data-aos-delay="200" className="relative">
               <div className="h-12 lg:h-20 z-20 rounded-full border-4 border-black flex flex-row items-center justify-center px-8 bg-[#9959BA] relative">
                 <p className="text-xs md:text-lg lg:text-[25px] text-white font-bold">
