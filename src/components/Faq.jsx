@@ -33,9 +33,9 @@ export default function Faq() {
                 key={idx}
                 className={`transition-all ease-in-out ${
                   open === idx
-                    ? "bg-[#9959ba] p-2 border-[6px] border-black h-48 "
+                    ? "bg-[#9959ba] p-2 border-[6px] border-black h-44"
                     : "h-14"
-                } duration-500 rounded-3xl`}
+                } duration-500 rounded-3xl flex items-start`}
                 onClick={() => {
                   if (open !== idx) {
                     setOpen(idx);
@@ -58,18 +58,6 @@ export default function Faq() {
         <img src={Icepop} alt="ICEPOP" className="h-14 w-auto" />
         <div className="flex items-center gap-5 mt-4">
           <a
-            href="/"
-            className="text-3xl text-white hover:text-[#73EFDF] transition-colors ease-in-out duration-300"
-          >
-            <FaTelegramPlane />
-          </a>
-          <a
-            href="/"
-            className="text-3xl text-white hover:text-[#73EFDF] transition-colors ease-in-out duration-300"
-          >
-            <FaDiscord />
-          </a>
-          <a
             href="https://x.com/icepopcoin?s=11"
             className="text-3xl text-white hover:text-[#73EFDF] transition-colors ease-in-out duration-300"
           >
@@ -84,18 +72,20 @@ export default function Faq() {
 const Questions = [
   {
     question: "What chain is ICEPOP on?",
-    answer: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
+    answer: "$ICEPOP is on Solana (SOL)",
   },
   {
     question: "Who is the Team?",
-    answer: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
+    answer:
+      " $ICEPOP is built by the Tier-1 marketing firm Lumina, Founded by Rhys Mckay who also is the co-founder of Basebet.",
   },
   {
     question: "How can I buy $ICEPOP",
-    answer: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
+    answer:
+      "You can participate in our presale. Post launch you will be able to buy via different CEXs & DEXs.",
   },
   {
     question: "Wen launch",
-    answer: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
+    answer: "July 2024.",
   },
 ];

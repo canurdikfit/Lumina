@@ -17,31 +17,43 @@ export default function BuyPop() {
               className="w-auto shrink-0 h-12 md:h-16 lg:h-24"
             />
           </div>
-
           <p className="text-black content_text text-base md:text-xl lg:text-2xl font-medium text-center">
-            $ICEPOP is a muuvement to unite everyone in crypto. Backed by number{" "}
+            Not released yet, first we do our presale. Then $ICEPOP{" "}
             <br className="hidden lg:block" />
-            go up technology, the bull born from the meme we all know and love{" "}
-            <br className="hidden lg:block" />
-            is here to lead the charge.
+            will be avaliable on:
           </p>
-          <div className="flex flex-row flex-wrap justify-center gap-x-2 gap-y-5 lg:gap-x-14 mt-5 md:gap-y-8 items-center">
-            {BuyLinks.map((items, idx) => (
-              <a
-                data-aos="fade-up"
-                data-aos-delay={50 * (idx + 1)}
-                key={idx}
-                href={items.url}
-                className="relative"
-              >
-                <div className="h-12 md:h-16 lg:h-20 z-20 rounded-full border-4 border-black flex flex-row items-center justify-center px-5 md:px-14 bg-[#9959BA] relative">
-                  <p className="text-xs md:text-xl lg:text-[25px] text-white font-bold">
-                    {items.title}
-                  </p>
-                </div>
-                <div className="absolute h-full w-full top-1 left-0.5 border-4 border-black rounded-full bg-black" />
-              </a>
-            ))}
+          <div className="flex flex-col justify-center gap-x-2 gap-y-5 lg:gap-x-14 mt-5 md:gap-y-8 items-center">
+            <a
+              data-aos="fade-up"
+              data-aos-delay={50}
+              href=""
+              className="relative"
+            >
+              <div className="h-12 md:h-16 lg:h-20 z-20 rounded-full border-4 border-black flex flex-row items-center justify-center px-10 md:px-20 bg-[#9959BA] relative">
+                <p className="text-xs md:text-xl lg:text-[25px] text-white font-bold">
+                  Presale
+                </p>
+              </div>
+              <div className="absolute h-full w-full top-1 left-0.5 border-4 border-black rounded-full bg-black" />
+            </a>
+            <div className="flex flex-row justify-center gap-x-2 lg:gap-x-14 items-center">
+              {BuyLinks.map((items, idx) => (
+                <a
+                  data-aos="fade-up"
+                  data-aos-delay={50 * (idx + 2)}
+                  key={idx}
+                  href={items.url}
+                  className="relative"
+                >
+                  <div className="h-12 md:h-16 lg:h-20 z-20 rounded-full border-4 border-black flex flex-row items-center justify-center px-10 md:px-20 bg-[#9959BA] relative">
+                    <p className="text-xs md:text-xl lg:text-[25px] text-white font-bold">
+                      {items.title}
+                    </p>
+                  </div>
+                  <div className="absolute h-full w-full top-1 left-0.5 border-4 border-black rounded-full bg-black" />
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -51,23 +63,11 @@ export default function BuyPop() {
 
 const BuyLinks = [
   {
-    title: "Buy on OKX",
+    title: "T1 exchanges",
     url: "/",
   },
   {
-    title: "Buy on KUCION",
-    url: "/",
-  },
-  {
-    title: "Buy on BYBIT",
-    url: "/",
-  },
-  {
-    title: "Buy on TAPBIT",
-    url: "/",
-  },
-  {
-    title: "Buy on BITMART",
+    title: "Joopiter",
     url: "/",
   },
 ];
