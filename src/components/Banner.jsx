@@ -4,7 +4,7 @@ import CopyToClipboard from "react-copy-to-clipboard";
 import { FaXTwitter } from "react-icons/fa6";
 
 export default function Banner() {
-  const Value = "CA: WEN? SOON";
+  const Value = "CA: WEN?";
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
@@ -27,16 +27,15 @@ export default function Banner() {
         </div>
         <div data-aos="fade-up" data-aos-delay="100" className="max-w-4xl">
           <span className="text-base md:text-xl lg:text-2xl text-black content_text line-through">
-            $ICEPOP isn't a
+            $ICEPOP Isn't just a
           </span>
           <span className="text-[#9959BA] purple_text text-base md:text-xl lg:text-2xl mx-2">
             Fucking Purple ICEPOP
           </span>
           <span className="text-base md:text-xl lg:text-2xl text-black content_text line-through">
-            it's a figure of culture who represents the Solana Ecosystem with
-            the objective to drive mass adoption to the crypto space in an
-            organic way. Built by proven builders in the space. Fucking Purple
-            ICEPOP
+            it's a figure of culture who represents the Solana Ecosystem, with
+            the curate the narrative that Solana summer is here all year round.
+            Built by proven builders.
           </span>
         </div>
         <div className="flex flex-row flex-wrap justify-center items-center gap-5">
@@ -48,7 +47,7 @@ export default function Banner() {
             onCopy={() => setCopied(true)}
           >
             <span>
-              <div className="h-12 md:h-16 lg:h-20 z-20 rounded-full border-4 border-black flex flex-row items-center justify-center px-10 bg-[#9959BA] relative">
+              <div className="h-12 md:h-16 lg:h-20 z-20 rounded-full border-4 border-black flex flex-row items-center justify-center px-12 md:px-20 bg-[#9959BA] relative">
                 <p className="text-xs md:text-lg lg:text-[25px] text-white text-stroked">
                   {Value}
                 </p>
@@ -58,7 +57,7 @@ export default function Banner() {
           </CopyToClipboard>
           <a href="https://x.com/icepopcoin?s=11">
             <div data-aos="fade-up" data-aos-delay="200" className="relative">
-              <div className="h-12 lg:h-20 z-20 rounded-full border-4 border-black flex flex-row items-center justify-center px-8 bg-[#9959BA] relative">
+              <div className="h-12 md:h-16 lg:h-20 z-20 rounded-full border-4 border-black flex flex-row items-center justify-center px-9 bg-[#9959BA] relative">
                 <p className="text-xs md:text-lg lg:text-[25px] text-white font-bold">
                   <FaXTwitter />
                 </p>

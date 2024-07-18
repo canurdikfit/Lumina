@@ -1,22 +1,18 @@
 import React from "react";
-import Video from "./../assets/video.mp4";
-import TheBox from "./../assets/images/thebox.png";
 
 export default function IcePop() {
   return (
     <section
       id="about"
-      className="px-6 md:px-14 lg:px-24 py-20 lg:pb-0 flex items-center justify-center bg-white"
+      className="px-6 md:px-14 lg:px-24 py-20 flex items-center justify-center bg-[#73EFDF]"
     >
-      <div className="w-fit mx-auto overflow-hidden container rounded-2xl">
-        <video
-          controls
-          playsInline
-          poster={TheBox}
-          className="w-auto h-[550px]"
-        >
-          <source src={Video} type="video/mp4" />
-        </video>
+      <div className="w-full block h-[550px] container rounded-2xl">
+        <iframe
+          src="https://drive.google.com/file/d/1D-w4j8LXjLMcB39V7abNMK1zemu5Hmlh/preview"
+          className="w-full h-full"
+          allow="autoplay"
+          allowFullScreen={true}
+        ></iframe>
       </div>
     </section>
   );
