@@ -11,7 +11,6 @@ export default function IcePop() {
       <div className="w-fit mx-auto overflow-hidden container rounded-2xl">
         <video
           controls
-          playsInline
           poster={TheBox}
           className="w-auto h-[550px]"
         >
