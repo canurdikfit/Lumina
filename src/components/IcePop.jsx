@@ -14,7 +14,6 @@ export default function IcePop() {
           playsInline
           poster={TheBox}
           className="w-auto h-[550px]"
-          ref={inputRef}
         >
           <source src={Video} type="video/mp4" />
         </video>
