@@ -1,111 +1,51 @@
-import React, { useState } from "react";
-import { FaBarsStaggered } from "react-icons/fa6";
-import { IoClose } from "react-icons/io5";
-import Logo from "./../assets/icons/logo.png";
-import { FaTelegramPlane, FaDiscord } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { useGSAP } from "@gsap/react";
+import Culangex from "./../assets/imgs/culangex.png";
+import { gsap } from "gsap";
 
-const Navbar = () => {
-  const [clicked, setClicked] = useState(true);
-  const changeToggle = () => {
-    setClicked(!clicked);
-  };
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger);
+
+export default function Navbar() {
+  useGSAP(() => {
+    gsap.to("#logo_resize", {
+      scale: 0.35,
+      translateY: -90,
+      scrollTrigger: {
+        trigger: "#logo_resize",
+        start: "+=0",
+        end: "+=150",
+        scrub: true,
+      },
+      ease: "circ",
+    });
+    gsap.to("#back_shadow", {
+      css: {
+        visibility: "visible",
+      },
+      scrollTrigger: {
+        trigger: "#logo_resize",
+        start: "top top",
+        end: "+=250",
+        scrub: true,
+      },
+      ease: "sine",
+    });
+  }, []);
   return (
-    <header className="absolute top-0 pt-5 px-10 lg:px-16 inset-x-0 z-50">
-      <nav>
-        <div
-          className={`fixed h-screen ${
-            clicked ? "hidden" : "block"
-          } w-screen bg-black/70 inset-0`}
+    <nav className="fixed top-0 inset-x-0 md:pt-16 pt-12 flex items-center justify-center z-50">
+      <div
+        id="back_shadow"
+        className="absolute z-10 top-0 w-full bg-gradient-to-b from-black to-black/0 h-[300px] invisible"
+      />
+      <div>
+        <img
+          src={Culangex}
+          alt="Culangex Logo"
+          id="logo_resize"
+          className="w-44 scale-75 h-auto relative z-20"
         />
-        <div className="flex items-center justify-between ">
-          <div className="shrink-0">
-            <img className="h-14 md:h-16 lg:h-20" src={Logo} alt="Logo" />
-          </div>
-          {clicked ? (
-            <div
-              className="lg:hidden text-black relative z-10"
-              onClick={changeToggle}
-            >
-              <FaBarsStaggered className="text-xl" />
-            </div>
-          ) : null}
-          <div
-            className={`lg:max-w-[61vw] w-full flex transition-all ease-in-out duration-500 ${
-              clicked
-                ? "-translate-x-[100vh] lg:translate-x-0"
-                : "translate-x-0"
-            } max-w-xs fixed lg:relative flex-col lg:flex-row items-center pb-20 pt-10 lg:p-0 justify-between top-0 left-0 -z-0 h-screen lg:h-auto bg-[#73EFDF] lg:bg-transparent`}
-          >
-            <div className="flex items-center justify-between w-full px-6 lg:hidden">
-              <div className="shrink-0">
-                <img className="h-14 md:h-16 lg:h-20" src={Logo} alt="Logo" />
-              </div>
-              <div
-                className="lg:hidden text-black relative z-10"
-                onClick={changeToggle}
-              >
-                <IoClose className="text-2xl" />
-              </div>
-            </div>
-            <ul className="flex items-center gap-10 flex-col lg:flex-row">
-              {NavLinks.map((items, idx) => (
-                <li key={idx}>
-                  <a
-                    className="text-xl font-semibold content_text text-black"
-                    href={items.url}
-                  >
-                    {items.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-            <div className="flex items-center gap-5">
-              <a
-                href="/"
-                className="text-2xl text-black hover:text-[#9959BA] transition-colors ease-in-out duration-300"
-              >
-                <FaTelegramPlane />
-              </a>
-              <a
-                href="/"
-                className="text-2xl text-black hover:text-[#9959BA] transition-colors ease-in-out duration-300"
-              >
-                <FaDiscord />
-              </a>
-              <a
-                href="/"
-                className="text-2xl text-black hover:text-[#9959BA] transition-colors ease-in-out duration-300"
-              >
-                <FaXTwitter />
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
-      .
-    </header>
+      </div>
+    </nav>
   );
-};
-
-export default Navbar;
-
-const NavLinks = [
-  {
-    url: "#buy",
-    name: "Buy $ICEPOP",
-  },
-  {
-    url: "#about",
-    name: "About",
-  },
-  {
-    url: "#token",
-    name: "Tokenomics",
-  },
-  {
-    url: "#faq",
-    name: "FAQ",
-  },
-];
+}

@@ -1,43 +1,93 @@
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
+@font-face {
+  font-family: "Guava Candy";
+  src: url("assets/fonts/GuavaCandy.ttf");
 }
 
 body {
-  font-family: "Indie Flower";
   margin: 0;
-  padding: 0;
-  background: rgb(115, 239, 223);
-  background: linear-gradient(
-    180deg,
-    rgba(115, 239, 223, 1) 0%,
-    rgba(153, 89, 186, 1) 10%
+  font-synthesis: none;
+  font-optical-sizing: auto;
+  font-family: "Guava Candy";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  background: #000;
+  color: #fff;
+}
+
+.main {
+  visibility: hidden;
+}
+
+.gradient_overlay {
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.08) 0%,
+    rgba(0, 0, 0, 1) 90%
   );
 }
 
-.content_text {
-  -webkit-text-stroke: 0.5px black;
-  text-stroke: 0.5px black;
-}
-.purple_text {
-  -webkit-text-stroke: 1.5px #9959ba;
-  text-stroke: 1.5px #9959ba;
+p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  @apply text-sm md:text-base lg:text-lg;
 }
 
-.text-stroked {
-  -webkit-text-stroke: 1px white;
-  text-stroke: 1px white;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Guava Candy";
+  background: #bfbfbf;
+  color: transparent;
+  text-shadow: 0.3px 3px 0 rgb(255, 255, 255);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
 }
 
-.icepop_bg {
-  background-color: #9959ba;
-  background-image: url("assets/images/icepop_bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+@media screen and (max-width: 660px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    text-shadow: 0.1px 2.2px 0 rgb(255, 255, 255);
+  }
+}
+
+h1 {
+  @apply text-center text-3xl md:text-5xl xl:text-7xl;
+}
+
+h2 {
+  @apply text-center text-3xl md:text-5xl xl:text-7xl;
+}
+
+.btnHov:hover {
+  transform: scale(1.08) rotate(4deg);
+  transition: all 0.5s cubic-bezier(0.67, 2.94, 0.31, 0.5);
+}
+
+.swiper-slide,
+.mySwiper {
+  @apply lg:w-[300px] w-[200px]  !important;
+}
+
+.swiper-3d .swiper-slide-shadow {
+  background: none !important;
+}
+
+input,
+textarea {
+  font-family: "Guava Candy";
 }

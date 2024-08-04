@@ -1,36 +1,28 @@
-import Aos from "aos";
+import { useGSAP } from "@gsap/react";
+import Loading from "./components/Loading";
+import gsap from "gsap";
 import Banner from "./components/Banner";
-import BuyPop from "./components/BuyPop";
-import Carousel from "./components/Carousel";
-import Faq from "./components/Faq";
-import IcePop from "./components/IcePop";
+import Welcome from "./components/Welcome";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import NewsBanner from "./components/NewsBanner";
-import Tokenomics from "./components/Tokenomics";
-import { useEffect } from "react";
-import "aos/dist/aos.css";
 
 function App() {
-  useEffect(() => {
-    Aos.init({
-      duration: 1000,
-      anchorPlacement: "bottom-bottom",
+  useGSAP(() => {
+    gsap.to(".main", 0, {
+      css: {
+        visibility: "visible",
+      },
     });
-    Aos.refresh();
   }, []);
+
   return (
-    <>
+    <main className="main w-screen overflow-hidden">
+      <Loading />
       <Navbar />
-      <main className="w-screen overflow-hidden">
-        <Banner />
-        <NewsBanner />
-        <BuyPop />
-        <Carousel />
-        <IcePop />
-        <Tokenomics />
-        <Faq />
-      </main>
-    </>
+      <Banner />
+      <Welcome />
+      <Footer />
+    </main>
   );
 }
 

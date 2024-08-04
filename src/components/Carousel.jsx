@@ -1,37 +1,47 @@
 import React from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick/lib/slider";
-import Buying from "./../assets/images/Buy.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-cards";
+import { EffectCards } from "swiper/modules";
+import French from "./../assets/imgs/french.png";
+import Zulu from "./../assets/imgs/zulu.png";
+import Yoruba from "./../assets/imgs/youruba.png";
 
 export default function Carousel() {
-  const settings = {
-    dots: false,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 4000,
-    autoplaySpeed: 4000,
-    cssEase: "linear",
-    variableWidth: true,
-  };
   return (
-    <div className="slider-container pt-8 pb-5 bg-[#9959BA] border-y-8 border-[#73EFDF]">
-      <Slider {...settings}>
-        {[...new Array(9).keys()].map((_, index) => (
-          <div
-            className="h-8 lg:h-10 w-28 flex items-center justify-center mx-10"
-            key={index}
-          >
-            <img
-              src={Buying}
-              alt="Buy $ICEPOP"
-              className="h-8 lg:h-10 w-auto"
-            />
-          </div>
-        ))}
-      </Slider>
+    <div className="relative">
+      <div className="absolute h-4/5 w-4/5 -right-10 rounded-full bg-[#13FFB8] blur-3xl opacity-25" />
+      <Swiper
+        effect={"cards"}
+        grabCursor={true}
+        modules={[EffectCards]}
+        centeredSlides={true}
+        loop={true}
+        slidesPerView={"auto"}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img
+            src={Yoruba}
+            alt="Yoruba"
+            className="lg:w-64 md:w-44 h-auto cursor-grab"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src={French}
+            alt="French"
+            className="lg:w-64 md:w-44 h-auto cursor-grab"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src={Zulu}
+            alt="Zulu"
+            className="lg:w-64 md:w-44 h-auto cursor-grab"
+          />
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
 }
